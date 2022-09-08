@@ -176,7 +176,7 @@ def send_message(to_user, access_token, region_name, weather, temp, wind_dir, no
                 "color": get_color()
             },
             "tip1": {
-                "value": "Happy Day",
+                "value": "Free Day",
                 "color": get_color()
             },
             "tip2": {
