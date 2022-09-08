@@ -135,6 +135,8 @@ def send_message(to_user, access_token, region_name, weather, temp, wind_dir, no
     for k, v in config.items():
         if k[0:5] == "birth":
             birthdays[k] = v
+        
+     
     data = {
         "touser": to_user,
         "template_id": config["template_id"],
@@ -171,6 +173,14 @@ def send_message(to_user, access_token, region_name, weather, temp, wind_dir, no
             },
             "note_ch": {
                 "value": note_ch,
+                "color": get_color()
+            },
+            "tip1": {
+                "value": "Happy Day",
+                "color": get_color()
+            },
+            "tip2": {
+                "value": "没课的一天捏。",
                 "color": get_color()
             }
         }
